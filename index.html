@@ -1,24 +1,120 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OnlySandre</title>
-    <meta name="description" content="OnlySandre is coming soon." />
+    <title>OnlySandre — Coming Soon</title>
+    <meta
+      name="description"
+      content="We’re working on the creation of our favorite YouTuber’s OnlySandre page. It will be online very soon."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <main class="page">
-      <section class="hero">
-        <div class="logo">OnlySandre</div>
-        <p class="chip">Working progress</p>
-        <h1>Coming soon</h1>
-        <p class="text">
-          We&apos;re working on the creation of our favorite YouTuber&apos;s OnlySandre page.
-          It will be online very soon.
-        </p>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="topbar">
+      <div class="brand" aria-label="OnlySandre logo">
+        <span class="brand-word">Only</span>
+        <span class="brand-badge">Sandre</span>
+      </div>
+      <nav class="topnav" aria-label="Preview navigation">
+        <a href="#creator">Creator</a>
+        <a href="#about">About</a>
+      </nav>
+    </header>
+
+    <main id="main-content" class="layout">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <span class="status-pill">Working progress</span>
+          <h1 id="hero-title">Subscribe to the creator you actually came for.</h1>
+          <p>
+            We’re working on the creation of our favorite YouTuber’s OnlySandre page.
+            It will be online very soon.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#creator">Coming soon</a>
+            <a class="btn btn-secondary" href="#about">Project update</a>
+          </div>
+        </div>
+
+        <aside id="creator" class="creator-card" aria-label="Creator preview">
+          <div class="creator-cover"></div>
+          <div class="creator-avatar" aria-hidden="true">S</div>
+          <div class="creator-body">
+            <div class="creator-head">
+              <div>
+                <h2>OnlySandre</h2>
+                <p class="handle">@favoriteyoutuber</p>
+              </div>
+              <span class="live-dot">Soon</span>
+            </div>
+
+            <p class="creator-text">
+              Exclusive content is on the way. Early supporters will be able to access the page as soon as it goes live.
+            </p>
+
+            <div class="creator-stats" aria-label="Preview stats">
+              <div>
+                <strong>1</strong>
+                <span>Creator</span>
+              </div>
+              <div>
+                <strong>WIP</strong>
+                <span>Status</span>
+              </div>
+              <div>
+                <strong>Soon</strong>
+                <span>Launch</span>
+              </div>
+            </div>
+
+            <button class="subscribe-btn" type="button">Follow the launch</button>
+          </div>
+        </aside>
+      </section>
+
+      <section id="about" class="feed-preview" aria-label="Preview feed">
+        <article class="post-card post-card-featured">
+          <div class="post-head">
+            <div class="mini-avatar">S</div>
+            <div>
+              <h3>OnlySandre</h3>
+              <p>Creator page in progress</p>
+            </div>
+          </div>
+          <div class="post-media post-media-main">
+            <div class="media-overlay">
+              <span>Preview</span>
+              <strong>Creator launch in progress</strong>
+            </div>
+          </div>
+          <p class="post-copy">
+            We’re building the official space for our favorite YouTuber. The page will be online very soon.
+          </p>
+        </article>
+
+        <article class="post-card">
+          <div class="post-head">
+            <div class="mini-avatar">S</div>
+            <div>
+              <h3>OnlySandre</h3>
+              <p>Behind the scenes</p>
+            </div>
+          </div>
+          <div class="post-media post-media-alt"></div>
+          <p class="post-copy">Profile setup, visuals and launch details are currently being prepared.</p>
+        </article>
       </section>
     </main>
-    <script src="./script.js"></script>
+
+    <script src="./script.js" defer></script>
   </body>
 </html>
